@@ -1,0 +1,8 @@
+{{- include "ffc-helm-library.deployment" (list . "tcg-customer-registry.deployment") -}}
+{{- define "tcg-customer-registry.deployment" -}}
+spec:
+  template:
+    spec:
+      containers:
+      - {{ include "ffc-helm-library.container" (list . "tcg-customer-registry.container") }}
+{{- end -}}

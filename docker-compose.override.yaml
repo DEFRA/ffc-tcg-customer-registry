@@ -2,14 +2,14 @@
 # to provide dependencies and expose ports for local testing
 
 services:
-  ffc-template-node:
+  tcg-customer-registry:
     build:
       target: development
-    image: ffc-template-node-development
-    container_name: ffc-template-node-development
+    image: tcg-customer-registry-development
+    container_name: tcg-customer-registry-development
     ports:
-      - "3000:3000"
-      - "9229:9229"
+      - "3053:3053"
+      - "9253:9229"
     volumes:
       - ./app:/home/node/app
       - ./package.json:/home/node/package.json
