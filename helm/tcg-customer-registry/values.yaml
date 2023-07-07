@@ -1,9 +1,9 @@
 environment: production
 environmentCode:
-name: tcg-customer-registry
+name: ffc-tcg-customer-registry
 namespace: tcg-customer
 workstream: tcg-customer
-image: tcg-customer-registry
+image: ffc-tcg-customer-registry
 
 labels:
   component: service
@@ -12,10 +12,10 @@ appInsights:
   connectionString:
 
 containerConfigMap:
-  name: tcg-customer-registry-config-map
+  name: ffc-tcg-customer-registry-config-map
 
 containerSecret:
-  name: tcg-customer-registry-container-secret
+  name: ffc-tcg-customer-registry-container-secret
   type: Opaque
 
 deployment: {}

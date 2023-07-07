@@ -1,10 +1,10 @@
 services:
-  tcg-customer-registry:
+  ffc-tcg-customer-registry:
     build:
       context: .
       target: production
-    image: tcg-customer-registry
-    container_name: tcg-customer-registry
+    image: ffc-tcg-customer-registry
+    container_name: ffc-tcg-customer-registry
     environment:
-      APPINSIGHTS_CLOUDROLE: tcg-customer-registry-local
+      APPINSIGHTS_CLOUDROLE: ffc-tcg-customer-registry-local
       APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}

@@ -1,5 +1,5 @@
-{{- include "ffc-helm-library.container-config-map" (list . "tcg-customer-registry.config-map") -}}
-{{- define "tcg-customer-registry.config-map" -}}
+{{- include "ffc-helm-library.container-config-map" (list . "ffc-tcg-customer-registry.config-map") -}}
+{{- define "ffc-tcg-customer-registry.config-map" -}}
 data:
   NODE_ENV: {{ quote .Values.environment }}
   PORT: {{ quote .Values.container.port }}

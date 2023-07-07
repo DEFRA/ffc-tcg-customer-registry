@@ -2,11 +2,11 @@
 # that test output is saved to the host
 
 services:
-  tcg-customer-registry:
+  ffc-tcg-customer-registry:
     build:
       target: development
-    image: tcg-customer-registry-development
-    container_name: tcg-customer-registry-test
+    image: ffc-tcg-customer-registry-development
+    container_name: ffc-tcg-customer-registry-test
     command: npm run test
     volumes:
       - ./app:/home/node/app

@@ -1,5 +1,5 @@
 services:
-  tcg-customer-registry:
+  ffc-tcg-customer-registry:
     command: >
       sh -c "npm run test:watch"
     volumes:
